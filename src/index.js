@@ -1,4 +1,8 @@
-const app = require('./app')
+const app = require('./app');
 
-app.listen(app.get('port'))
-console.log('server on port',app.get('port'))
+async function main() {
+    await app.listen(3000);
+    console.log('Server on port', 3000);
+}
+
+main();
