@@ -7,23 +7,28 @@
 
             <form action="/update-update" method="POST">
                 <div class="form-group">
-                    <input type="text" name="id" value={{id}} class="form-control" autofocus>
+                    <label for="">Id</label>
+                    <input type="text" name="id" value={{id}} class="form-control" readonly>
                 </div>
                 <br>
                 <div class="form-group">
-                    <input type="text" name="firstname" value={{contact.firstname}} class="form-control" autofocus>
+                    <label for="">Name</label>
+                    <input type="text" name="firstname" value={{contact.firstname}} class="form-control" autofocus required>
                 </div>
                 <br>
                 <div class="form-group">
-                    <input type="text" name="lastname" value={{contact.lastname}} class="form-control">
+                    <label for="">LastName</label>
+                    <input type="text" name="lastname" value={{contact.lastname}} class="form-control" required>
                 </div>
                 <br>
                 <div class="form-group"> 
-                    <input type="email" name="email" value={{contact.email}} class="form-control">
+                    <label for="">Email</label>
+                    <input type="email" name="email" value={{contact.email}} class="form-control" required>
                 </div>
                 <br>
                 <div class="form-group">
-                    <input type="tel" name="phone" value={{contact.phone}} class="form-control">
+                    <label for="">Phone</label>
+                    <input type="number" name="phone" value={{contact.phone}} class="form-control" required>
                 </div>
                 <br>
                 <button class="btn btn-primary btn-block">
